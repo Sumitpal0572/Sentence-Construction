@@ -1,15 +1,14 @@
-// src/Pages/Quiz2.tsx
+// src/Pages/Quiz4.tsx
 import { ArrowRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
-export default function Quiz2() {
+export default function Quiz4() {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    // You can update this to go to Quiz3.tsx later
-    navigate("/quiz3");
-    console.log("Next question logic or page");
+    console.log("Go to result or final page");
+    // navigate("/result") <-- Add this route later
   };
 
   return (
@@ -25,22 +24,20 @@ export default function Quiz2() {
 
       {/* Progress Bar */}
       <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden mb-6">
-        <div className="w-1/2 h-full bg-red-500" /> {/* Update width as needed */}
+        <div className="w-5/6 h-full bg-red-500" />
       </div>
 
-      {/* Sentence */}
+      {/* Sentence with 3 blanks */}
       <p className="text-lg text-gray-800 text-center">
-        The teacher <span className="underline">______</span> the students to submit their assignments <br />
-        <span className="underline">______</span> the deadline to avoid penalties.
+        The professor <span className="underline">______</span> the topic clearly, but some students 
+        <br /> <span className="underline">______</span> confused due to the <span className="underline">______</span> examples.
       </p>
 
-      {/* Only 3 options */}
+      {/* Only 1 option */}
       <div className="mt-6 flex flex-wrap gap-4 justify-center">
-        {["Reminded", "Before", "Silently"].map((word, idx) => (
-          <Button key={idx} variant="outline" className="px-6">
-            {word}
-          </Button>
-        ))}
+        <Button variant="outline" className="px-6">
+          Remained
+        </Button>
       </div>
 
       {/* Bottom Move Arrow */}
