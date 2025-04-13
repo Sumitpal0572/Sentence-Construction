@@ -7,6 +7,7 @@ export default function Quiz4() {
   const navigate = useNavigate();
 
   const handleNext = () => {
+    navigate("/quiz5")
     console.log("Go to result or final page");
     // navigate("/result") <-- Add this route later
   };
@@ -29,8 +30,9 @@ export default function Quiz4() {
 
       {/* Sentence with 3 blanks */}
       <p className="text-lg text-gray-800 text-center">
-        The professor <span className="underline">______</span> the topic clearly, but some students 
-        <br /> <span className="underline">______</span> confused due to the <span className="underline">______</span> examples.
+        Yesterday, we had a <span className="underline"> Different </span> discussion about the project, but it <br /> 
+        <span className="underline"> Turned </span> into an argument because everyone had 
+        <span className="underline"> Quick </span> opinions on the final.
       </p>
 
       {/* Only 1 option */}

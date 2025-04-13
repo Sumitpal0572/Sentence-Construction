@@ -28,10 +28,11 @@ export default function Quiz2() {
         <div className="w-1/2 h-full bg-red-500" /> {/* Update width as needed */}
       </div>
 
-      {/* Sentence */}
+    
       <p className="text-lg text-gray-800 text-center">
-        The teacher <span className="underline">______</span> the students to submit their assignments <br />
-        <span className="underline">______</span> the deadline to avoid penalties.
+        Yesterday, we had a <span className="underline"> Different </span> discussion about the project, but it <br /> 
+        <span className="underline">______</span> into an argument because everyone had 
+        <span className="underline">______</span> opinions on the final.
       </p>
 
       {/* Only 3 options */}
