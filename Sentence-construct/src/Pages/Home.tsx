@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { Button } from "@/components/ui/button";
 import { PencilLine } from "lucide-react";
 import { useNavigate } from "react-router-dom";
