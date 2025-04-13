@@ -43,9 +43,9 @@ export default function Quiz() {
       </div>
 
       {/* Bottom Move Arrow */}
-      <div className="mt-10">
-        <Button size="icon" className="rounded-full h-12 w-12" onClick={handleNext}>
-          <ArrowRight />
+      <div className="mt-10 ">
+        <Button size="icon" className="rounded-full h-12 w-12 bg-blue-900 hover:bg-blue-700" onClick={handleNext}>
+          <ArrowRight className="text-white"  />
         </Button>
       </div>
     </div>
